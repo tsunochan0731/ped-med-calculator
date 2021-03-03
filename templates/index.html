@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>小児のくすりの計算機</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>小児のくすりの計算機</h1>
+    </div>
+    <div class="main">
+      <form action="/result" method="POST">
+        <p>年齢を入力してください(才)</p>
+        <input type="text" name="age" pattern="[1-9][0-9]*" placeholder="半角数字" required/>
+        <p>体重を入力してください(kg)</p>
+        <input type="text" name="BW" pattern="[1-9][0-9]*" placeholder="半角数字" required/>
+
+         <div>
+           <p>感冒薬</p>
+           <p>アスベリンDS2%</p>
+           <input id="asberin_p" type="checkbox" name="asberin_p" value="y">
+           <p>アスベリンシロップ0.5%</p>
+           <input id="asberin_s" type="checkbox" name="asberin_s" value="y">
+           <p>ムコダインDS50%</p>
+           <input id="mukodain_p" type="checkbox" name="mukodain_p" value="y">
+           <p>ムコダインシロップ5%</p>
+           <input id="mukodain_s" type="checkbox" name="mukodain_s" value="y">
+         </div>
+         <div>
+           <p>気管支喘息</p>
+           <p>ホクナリンテープ</p>
+           <input id="hokunarin" type="checkbox" name="hokunarin" value="y">
+         </div>
+         <div>
+           <input type = "submit" value = "Go">
+         </div>
+       </form>
+     </div>
+   </body>
+  </html>

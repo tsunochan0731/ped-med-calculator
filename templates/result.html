@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>小児のくすり計算機</title>
+  </head>
+  <body>
+    <div class="header">
+      <h1>小児のくすりの計算機</h1>
+    </div>
+    <div class="main">
+      <p class="thema">くすりの用量用法について</p>
+      <dl>
+      {% for i in result %}
+        <dt><h4>{{ i.split('\n')[0] }}</h4></dt>
+        <dd>{{ i.split('\n')[1] }}</dd>
+        <dd>{{ i.split('\n')[2] }}</dd>
+        <p></p>
+      {% endfor %}
+      </dl>
+    </div>
+  </body>
+</html>
